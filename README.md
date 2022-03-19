@@ -8,3 +8,5 @@ e-commerceApp, Registering using Firebase, Adding products for retailers
 ![WhatsApp Image 2021-01-13 at 6 22 43 PM (1)](https://user-images.githubusercontent.com/35655884/159124720-1297b7a8-628b-49be-8cfc-4a2dbe02cb81.jpeg)
 ![WhatsApp Image 2021-01-13 at 6 22 43 PM](https://user-images.githubusercontent.com/35655884/159124721-95ebc16f-0c9c-4440-aea8-1fbbb55d5bde.jpeg)
 ![WhatsApp Image 2021-01-14 at 4 24 36 PM](https://user-images.githubusercontent.com/35655884/159124722-ae3532c7-59ea-4b29-9aac-bdf4b5f0c8bb.jpeg)
+![Artboard – 1](https://user-images.githubusercontent.com/35655884/159124858-8ae7c5c8-7bef-45d7-9699-e13a2dac0dc7.png)
+![Artboard – 2](https://user-images.githubusercontent.com/35655884/159124859-294f1873-c1b5-4332-bc03-529194ab9212.png)
