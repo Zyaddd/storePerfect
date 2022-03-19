@@ -1,6 +1,5 @@
 # storePerfect
-e-commerceApp
-database using Firebase, Adding products for retailers
+e-commerceApp, database using Firebase, Adding products for retailers
 
 ![Artboard – 3](https://user-images.githubusercontent.com/35655884/159124711-f3ac064f-d82c-4f9f-b887-8532ce90b566.png)
 ![Artboard – 1](https://user-images.githubusercontent.com/35655884/159124858-8ae7c5c8-7bef-45d7-9699-e13a2dac0dc7.png)
