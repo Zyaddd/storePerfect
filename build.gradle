@@ -1,0 +1,153 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+
+        maven {
+            url "https://maven.springframework.org/release"
+        }
+        maven {
+            url "https://maven.restlet.com"}
+        flatDir {
+            dirs 'lib'
+        }
+        flatDir {
+            dirs 'lib1', 'lib2'
+        }
+        maven {
+            url "http://repo.mycompany.com/maven2"
+        }
+        maven {
+            // Look for POMs and artifacts, such as JARs, here
+            url "http://repo2.mycompany.com/maven2"
+            // Look for artifacts here if not found at the above location
+            artifactUrls "http://repo.mycompany.com/jars"
+            artifactUrls "http://repo.mycompany.com/jars2"}
+        ivy {
+            url "http://repo.mycompany.com/repo"
+        }
+        ivy {
+            url "http://repo.mycompany.com/repo"
+            layout "maven"
+        }
+        ivy {
+            url "http://repo.mycompany.com/repo"
+            patternLayout {
+                artifact "[module]/[revision]/[type]/[artifact].[ext]"
+            }
+        }
+        ivy {
+            url "http://repo.mycompany.com/repo"
+            patternLayout {
+                artifact "3rd-party-artifacts/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+                artifact "company-artifacts/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+                ivy "ivy-files/[organisation]/[module]/[revision]/ivy.xml"
+            }
+        }
+        ivy {
+            url "http://repo.mycompany.com/repo"
+            patternLayout {
+                artifact "[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+                m2compatible = true
+            }
+        }
+        ivy {
+            url "http://repo.mycompany.com"
+            credentials {
+                username "user"
+                password "password"
+            }
+        }
+        maven {
+            url "https://repo.mycompany.com/maven2"
+            content {
+                // this repository only contains artifacts with group "my.company"
+                includeGroup "my.company"
+            }
+        }
+        jcenter {
+            content {
+                // this repository contains everything BUT artifacts with group starting with "my.company"
+                excludeGroupByRegex "my\\.company.*"
+            }
+        }
+
+        exclusiveContent {
+            forRepository {
+                maven {
+                    url "https://repo.mycompany.com/maven2"
+                }
+            }
+            filter {
+                // this repository only contains artifacts with group "my.company"
+                includeGroup "my.company"
+            }
+        }
+        maven {
+            url "https://repo.mycompany.com/releases"
+            mavenContent {
+                releasesOnly()
+            }
+        }
+        maven {
+            url "https://repo.mycompany.com/snapshots"
+            mavenContent {
+                snapshotsOnly()
+            }
+        }
+        maven {
+            url "http://repo.mycompany.com/repo"
+            metadataSources {
+                mavenPom()
+                artifact()
+            }
+        }
+        maven {
+            url "http://repo.mycompany.com/repo"
+            metadataSources {
+                mavenPom()
+                artifact()
+                ignoreGradleMetadataRedirection()
+            }
+        }
+        google()
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.1'
+        classpath 'com.google.gms:google-services:4.3.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven {
+            url 'https://maven.google.com'
+        }
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+
+}
+
+
+
+

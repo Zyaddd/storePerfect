@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"
+        android:onClick="onNavigationItemSelected"/>
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        android:onClick="onNavigationItemSelected"/>
+
+
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/menuSellWithUs"
+                android:icon="@drawable/ic_baseline_attach_money_24"
+                android:title="Sell on storePerfect"
+                android:onClick="onNavigationItemSelected"/>
+
+            <item
+                android:id="@+id/menuLogin"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="Login"
+                android:onClick="onNavigationItemSelected"/>
+
+            <item
+                android:id="@+id/menuLogout"
+                android:icon="@drawable/ic_back"
+                android:title="Logout"
+                android:onClick="onNavigationItemSelected"/>
+
+
+        </menu>
+    </item>
+
+    <item android:title="settings">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menuLocation"
+                    android:icon="@drawable/ic_baseline_add_location_alt_24"
+                    android:title="Location"
+                    android:onClick="onNavigationItemSelected"/>
+                <item
+                    android:id="@+id/menuPayment"
+                    android:icon="@drawable/ic_baseline_payments_24"
+                    android:title="Payment"
+                    android:onClick="onNavigationItemSelected"/>
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>

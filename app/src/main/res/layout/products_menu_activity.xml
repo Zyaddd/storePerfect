@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artboard"
+    tools:context=".Store_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--toolbar-->
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_menu"
+                app:itemIconTint="@color/colorWhite" />
+
+            <ImageView
+                android:id="@+id/cartIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:fontFamily="@font/caveat_bold"
+                android:text="storePerfect"
+                android:textColor="@color/colorWhite"
+                android:textSize="26sp" />
+
+        </Toolbar>
+        <!--end of tool bar-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+
+            <!--        design here-->
+            <!--you may also like-->
+            <TextView
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/titilliumweb_semibold"
+                android:text="You may also like"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <!--Category_Scroll-->
+            <HorizontalScrollView
+                android:id="@+id/brandScrollFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--tablets-->
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/card_scroll_products"
+                        android:elevation="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:scaleX="1.1"
+                            android:scaleY="1.1"
+                            android:src="@drawable/tablet" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_products_title"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:fontFamily="@font/titilliumweb_semibold"
+                                android:text="Tablets"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="28sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--end of tablets-->
+
+
+                    <!--headphones-->
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/card_scroll_products"
+                        android:elevation="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:scaleX=".9"
+                            android:scaleY=".9"
+                            android:src="@drawable/headphones" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_products_title"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/titilliumweb_semibold"
+                                android:text="Headphones"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--end of headphones-->
+
+                    <!--cables-->
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/card_scroll_products"
+                        android:elevation="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:src="@drawable/cable" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_products_title"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:fontFamily="@font/titilliumweb_semibold"
+                                android:text="Cables"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="28sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--end of cables-->
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <!--end of Category-->
+
+
+            <!--labtops Text-->
+            <TextView
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/titilliumweb_semibold"
+                android:text="Labtops"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+
+
+            <!--1st product list-->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/card_product_list"
+                android:orientation="horizontal"
+                android:elevation="12dp">
+
+                <!--product image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/labtop" />
+                <!--end of product image-->
+
+                <!--product details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--product name-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:text="Microsoft Surface Pro 256GB SSD Memory Core i7 9th Gen + Stylist"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <!--end of product name-->
+
+                    <!--product price-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/titillium_regular"
+                        android:text="25,000.00 EGP"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <!--end of product price-->
+
+                    <!--add to card Button-->
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/button_addtocart"
+                        android:drawableLeft="@drawable/ic_add_to_cart"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="ADD TO CART"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+                    <!--end of add to card Button-->
+
+                </LinearLayout>
+                <!--end of product details-->
+
+            </LinearLayout>
+            <!--end of 1st product list-->
+
+            <!--2nd product list-->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/card_product_list"
+                android:orientation="horizontal"
+                android:elevation="12dp">
+
+                <!--product image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:scaleX=".85"
+                    android:scaleY=".85"
+                    android:src="@drawable/mac_pro" />
+                <!--end of product image-->
+
+                <!--product details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--product name-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:text="Mac Pro Core i9 10th Gen 1TB SSD AMD Razor 5 6GB"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <!--end of product name-->
+
+                    <!--product price-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/titillium_regular"
+                        android:text="59,499.00 EGP"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="22dp"/>
+                    <!--end of product price-->
+
+                    <!--add to card Button-->
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/button_addtocart"
+                        android:drawableLeft="@drawable/ic_add_to_cart"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="ADD TO CART"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+                    <!--end of add to card Button-->
+
+                </LinearLayout>
+                <!--end of product details-->
+
+            </LinearLayout>
+            <!--end of 2nd product list-->
+
+            <!--3rd product list-->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/card_product_list"
+                android:orientation="horizontal"
+                android:elevation="12dp">
+
+                <!--product image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/acer_labtop"
+                    android:scaleY=".9"
+                    android:scaleX=".9"/>
+                <!--end of product image-->
+
+                <!--product details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--product name-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:text="Acer Predator gaming labtop 512GB SSD intel Core i9 10th Gen 2080 RTX 4GB"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                    <!--end of product name-->
+
+                    <!--product price-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/titillium_regular"
+                        android:text="32,999.00 EGP"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <!--end of product price-->
+
+                    <!--add to card Button-->
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/button_addtocart"
+                        android:drawableLeft="@drawable/ic_add_to_cart"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="ADD TO CART"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+                    <!--end of add to card Button-->
+
+                </LinearLayout>
+                <!--end of product details-->
+
+            </LinearLayout>
+            <!--end of 3rd product list-->
+
+            <!--4th product list-->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/card_product_list"
+                android:orientation="horizontal"
+                android:layout_marginBottom="18dp"
+                android:elevation="12dp">
+
+                <!--product image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/asus_labtop"
+                    android:scaleY="1.1"
+                    android:scaleX="1.1"/>
+                <!--end of product image-->
+
+                <!--product details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--product name-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:text="Asus gaming labtop 1TB HDD 256GB SSD RTX 2060Ti"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <!--end of product name-->
+
+                    <!--product price-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/titillium_regular"
+                        android:text="34,999.00 EGP"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <!--end of product price-->
+
+                    <!--add to card Button-->
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/button_addtocart"
+                        android:drawableLeft="@drawable/ic_add_to_cart"
+                        android:fontFamily="@font/titilliumweb_semibold"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="ADD TO CART"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+                    <!--end of add to card Button-->
+
+                </LinearLayout>
+                <!--end of product details-->
+
+            </LinearLayout>
+            <!--end of 4th product list-->
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_navigation_header"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
