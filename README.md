@@ -2,7 +2,6 @@
 e-commerceApp, Registering using Firebase, Adding products for retailers
 
 ![Artboard – 3](https://user-images.githubusercontent.com/35655884/159124711-f3ac064f-d82c-4f9f-b887-8532ce90b566.png)
-![Artboard – 5](https://user-images.githubusercontent.com/35655884/159124714-15c76632-d60d-45e2-8541-a5da0bc74dd5.png)
 ![cart](https://user-images.githubusercontent.com/35655884/159124715-d589982f-463b-484e-a372-fb227a3c266b.png)
 ![product_page – 1](https://user-images.githubusercontent.com/35655884/159124716-cd1e7116-d82c-403e-a43c-553c83acd7ff.png)
 ![product_page](https://user-images.githubusercontent.com/35655884/159124718-e48a1c64-66e3-440a-aff5-afdf79a7d9a4.png)
